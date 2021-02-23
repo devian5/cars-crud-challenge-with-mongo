@@ -14,6 +14,7 @@ router.get('/',async (req, res) => {
 router.post('/',async (req, res) => {
     try{
         const id = await carsController.store(req.body);
+        console.log('===============================>',id)
         const status = 'success';
         res.json({status,id});
     } catch( error ){
