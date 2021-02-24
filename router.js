@@ -4,7 +4,7 @@ const userRouter = require('./routers/userRouter');
 
 
 router.use('/cars',carRouter);
-router.use('/user',userRouter);
+router.use('/users',userRouter);
 
 
 module.exports = router;
